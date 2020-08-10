@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    background-color: rgb(247,233,228);
+}
+
+.chz_navbar{
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/*el import es para que le de prioridad a este estilo*/
+.chz_navbar div, .chz_navbar ul{
+    background-color: transparent !important;
+}
+
+/*para que todo el contenedor de seccion tenga un margen*/
+.chz_cont_sec_1{
+    padding: 5%;
+}
+
+.chz_cont_sec_2{
+    padding: 10%;
+    text-align: center;
+}
+
+.chz_cont_sec_1_link{
+    padding: 5%;
+}
+
+.chz_cont_sec_1_link a{
+    width: 200px;
+}
+
+.chz_cont_sec_1 hr{
+    border-top: 1px solid rgba(1, 1, 1, 0.3);
+}
+
+.footer{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(230,230,230);
+}
+
+.chz_sobremi{
+    text-align: center;
+    padding: 5%;
+}
+
+.chz_cont_sobremi{
+    text-align: center;
+    padding: 10%;
+}
+
+.chz_cont_sobremi1{
+    text-align: center;
+    padding: 10%;
+    margin-top: -15%;
+}
+
+.chz_cont_img_sobremi{
+    background-position: center center;
+}
+
+.chz_hola{
+    margin-top: -10%;
+}
+
+
+
+/*estilos para el portafolio*/
+
+/*header*/
+.contenedor{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.grid{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5 linear 1s;
+}
+
+.grid.imagenes-cargadas {
+    opacity: 1;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0%;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+    position: relative;
+    
+}
+
+
+.grid .item img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+/*Overlay*/
+.overlay {
+    position: fixed; /*posicion fija del fondo*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay.activo{
+    display: flex;
+}
+
+.overlay img{
+    max-width: 100%;
+}
+
+.overlay .descripcion{
+    display: block;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+footer .redes-sociales {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s ease all;
+}
+
+footer .redes-sociales .whatsapp {background: #00bb2d;}
+footer .redes-sociales .facebook {background: #3b5998;}
+footer .redes-sociales .instagram {background: #c13584;}
+
+footer .redes-sociales a i {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .contenedor-icono:hover a{
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from{
+        transform: rotate3d(0,0,0,0);
+    }
+    to {
+        transform: rotate3d(0,1,0, 360deg);
+    }
+}
+
+footer .creado-por {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #c13584;
+}
+
+footer .creado-por a {color: #000;}
+footer .creado-por a:hover {text-decoration: underline;}
+
+/* mediaqueries*/
+@media screen and (max-width: 700px) {
+    .grid .item {
+        width: calc(50% - 20px);
+    }
+    
+    header .barra-busqueda{
+        width: 100%;
+    }
+}

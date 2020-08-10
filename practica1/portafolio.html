@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Portafolio</title>
+ <!-- aqui agregamos una fuente de letra-->
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+     <!-- aqui llamamos a boopstrap, que hemos descargado y pegado en la carpeta mencionadas
+  para que nos agarre los estilos que vayamos agregando-->
+     <script src="https://kit.fontawesome.com/2a8621c0a2.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="img/iconos/css/fontello.css">
+     <link rel="stylesheet" href="ext/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="ccs/keyframes.css">
+     <link rel="stylesheet" href="ccs/portafolio.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Juanito Perez Gonzalez</h1>
+                <p>Informatio en proceso</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="" class="activo">Todos</a>
+                <a href="">Largo</a>
+                <a href="">Medio</a>
+                <a href="">Corto</a>
+            </div>
+            <div class="logo">
+                <a href="../Dog/index.html">Inicio</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+                 data-categoria="largo" 
+                 data-etiquetas="largo largo largo"
+                 data-descripcion="1.- largo ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="largo" 
+                 data-etiquetas="largo largo largo"
+                 data-descripcion="2.- largo ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="largo" 
+                 data-etiquetas="largo largo largo"
+                 data-descripcion="3.- largo ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="medio" 
+                 data-etiquetas="medio medio medio"
+                 data-descripcion="4.- medio ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/4.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="medio" 
+                 data-etiquetas="medio medio medio"
+                 data-descripcion="5.- medio ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="medio" 
+                 data-etiquetas="medio medio medio"
+                 data-descripcion="6.- medio ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/6.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="corto" 
+                 data-etiquetas="corto corto corto"
+                 data-descripcion="7.- corto ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/7.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="corto" 
+                 data-etiquetas="corto corto corto"
+                 data-descripcion="8.- corto ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/8.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                 data-categoria="corto" 
+                 data-etiquetas="corto corto corto"
+                 data-descripcion="9.- corto ipsum dolor sit amet consectetur"
+            >
+                <div class="item-contenido">
+                    <img src="img/9.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="http://api.whatsapp.com/send?phone=56971988053" target="_blank" class="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="http://www.facebook.com" target="_blank" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="http://www.instagram.com" target="_blank" class=instagram">
+                            <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio diseñado por</a> - <a href="#">Victor Reyes<a href="www.victorreyes.com">Chriztian</a></p>
+            </div>
+        </footer>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
+    
+<script src="ext/bootstrap/js/jquery.js"></script>
+<script src="ext/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>  
+<script src="js/main.js"></script>
+
+</body>
+</html>

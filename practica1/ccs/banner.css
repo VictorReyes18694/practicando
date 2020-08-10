@@ -1,0 +1,110 @@
+.chz_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../img/fondo.jpg"); 
+}
+
+/* un comentario */
+.chz_sobra{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%); /* avarcamos navegadores safari,opera*/
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    width: 55%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    margin: auto;
+}
+/*modifica contenedor con sobra en hr*/
+.chz_sobra hr{
+    border-top: 1px solid #ffffff;
+}
+/*modifica contenedores con sobra en h1*/
+.chz_sobra h1{
+    font-size: 8vw;
+    margin-bottom: 10px;
+}
+
+.chz_sobra p{
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
+
+.chz_cont_banner_link{
+    margin: 15px;
+    position: relative;
+}
+
+.chz_cont_banner_link a{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 1px; /*para que la letra no toque los bordes*/
+    margin-bottom: 5px;
+    width: 150px; /* para que se vean geometricamente estaticos o del mismo tamaño*/
+}
+
+/* agregar hover para agregar un evento: pasaremos el mouse y cambiara de color*/
+.chz_cont_banner_link a:hover{
+    background-color: #ffffff;
+    color: #111;
+}
+
+/**/
+.chz_banner_link{
+    opacity: 0;
+    animation: chz_keyframes_aparecer_de_arriba 1s;
+    -webkit-animation: chz_keyframes_aparecer_de_arriba 1s;
+    animation-fill-mode: forwards;
+   
+}
+
+/*le agregamos animacion al contenedor
+llamamos al keyframe que hemos creado en  keyframe.css*/
+.chz_banner_link_1{
+    opacity: 0;
+    animation: chz_keyframes_aparecer_de_arriba 1s;
+    -webkit-animation: chz_keyframes_aparecer_de_arriba 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.chz_banner_link_2{
+    opacity: 0;
+    animation: chz_keyframes_aparecer_de_arriba 1s;
+    -webkit-animation: chz_keyframes_aparecer_de_arriba 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.chz_cont_banner_sec_3{
+    height: 100vh; 
+    background-attachment: fixed; /**/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* que tome el tamaño de la imagen*/
+    background-image: url("../img/snk.png");
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.chz_cont_banner_sec_3 .row{
+    background-color: rgba(1, 1, 1, 0.7);
+    color: #fff;
+    padding: 2%;
+}
+
+.chz_cont_img{
+    padding: 5%;
+}
